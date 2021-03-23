@@ -1,0 +1,95 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  width: 100vw;
+  height: 100vh;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 20px;
+  display: grid;
+  grid-template-rows: 150px 1fr 100px;
+  background-color: #FFFBF2;
+}
+.navigations{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+}
+.navigations img:hover{
+  filter: opacity(50%);
+}
+.navlogos{
+  height: 40px;
+  margin: 1.5vw;
+}
+.header{
+  margin: 0;
+  grid-row: 1;
+  background-color: #FFFBF2;
+}
+.contentpart{
+  margin: 0;
+  padding: 0;
+  grid-row: 2;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer{
+  margin: 0;
+  padding: 0;
+  grid-row: 3;
+  background-color: #FFFBF2;
+  display: flex;
+  justify-content: center;
+}
+.hcontent{
+  height: 100%;
+  width: 100%;
+}
+.accname{
+  height: 100%;
+  width: 300px;
+  display: flex;
+  float: left;
+  margin: 0px 50px 75px 50px;
+  line-height: 150px;
+}
+.logoimg{
+  width: 120px;
+  height: 120px;
+  float: left;
+  margin: 15px 10px 15px 40px;
+  border-radius: 50%;
+}
+.smlogos{
+  margin: 10px 10px 0 10px;
+}
+.smlogos:hover{
+  filter: opacity(65%);
+}
+.footer img{
+  border-radius: 5px;
+}
+.contentpart{
+  animation: loadIn 1s;
+}
+@keyframes loadIn {
+  from{
+    opacity: 0;
+    transform: translateY(-5vh);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

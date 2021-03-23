@@ -1,0 +1,73 @@
+.contentpart{
+  background-color: #8FA6AC;
+}
+.bookspart{
+  width: 100%;
+  overflow: hidden;
+}
+.blist{
+  display: flex;
+  height: 44vh;
+}
+.blist input{
+  display: none;
+}
+.bbox{
+  height: 100%;
+  width: 12vw;
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 2s;
+}
+
+.bbox img{
+  width: 100%;
+}
+.bbox:nth-of-type(0), .bbox:nth-of-type(5n+1){
+  margin-left: 10vw;
+}
+.bbox:nth-of-type(5n){
+  margin-right: 10vw;
+}
+.booktitle, .bookauthor{
+  font-size: 2vh;
+  font-family: "Times New Roman", Times, serif;
+}
+.mannav{
+  position: absolute;
+  width: 100%;
+  margin-top: 1vw;
+  display: flex;
+  justify-content: center;
+}
+.manbtn{
+  background: rgba(50, 50, 50, 0.25);
+  padding: 0.7vw;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.manbtn:not(:last-child){
+  margin-right: 1.5vw;
+}
+.manbtn:hover{
+  background: rgba(50, 50, 50, 0.9);
+}
+.slidearrows{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin-top: -13.5vw;
+  height: 4vw;
+}
+.slidearrows input:hover{
+  filter: opacity(50%);
+  transition: .5s;
+}
+.slidearrows input:not(:last-child){
+  margin-right: 85vw;
+}

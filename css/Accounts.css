@@ -1,0 +1,56 @@
+.login{
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login img{
+  width: 100%;
+  z-index: 0;
+}
+.loginpanel{
+  width: 50vh;
+  height: 50vh;
+  background-color: #F5EACFB2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+}
+.loginthing{
+  font-size: 5vh;
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+}
+.username, .password{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3vh;
+}
+.username input, .password input{
+  width: 90%;
+  height: 3.5vh;
+  font-size: 2vh;
+}
+.rem{
+  width: 47.5%;
+  position: relative;
+  top: -5vh;
+  font-size: 2.5vh;
+}
+input[type="submit"]{
+  border: none;
+ width: 25vh;
+ height: 5vh;
+ position: relative;
+ bottom: -12vh;
+ border-radius: 2.5vh;
+ background-color: #FCFDFC;
+ font-size: 2vh;
+}
+input[type="submit"]:hover{
+  border: 2px solid #bfb7a3;
+}

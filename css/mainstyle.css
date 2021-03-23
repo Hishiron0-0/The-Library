@@ -1,0 +1,282 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  width: 100vw;
+  height: 100vh;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  display: grid;
+  grid-template-rows: 150px 1fr 100px;
+  background-color: #FFFBF2;
+}
+.container div{
+
+}
+.header{
+  margin: 0;
+  grid-row: 1;
+  background-color: #FFFBF2;
+}
+.contentpart{
+  margin: 0;
+  padding: 0;
+  grid-row: 2;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer{
+  margin: 0;
+  padding: 0;
+  grid-row: 3;
+  background-color: #FFFBF2;
+  display: flex;
+  justify-content: center;
+}
+.hcontent{
+  height: 100%;
+  width: 100%;
+}
+.accname{
+  height: 100%;
+  width: 300px;
+  display: flex;
+  float: left;
+  margin: 0px 50px 75px 50px;
+  line-height: 150px;
+}
+.logoimg{
+  width: 120px;
+  height: 120px;
+  float: left;
+  margin: 15px 10px 15px 40px;
+  border-radius: 50%;
+}
+.navigations{
+margin: 0;
+padding: 0;
+height: 100%;
+width: 25%;
+display: flex;
+justify-content: center;
+align-items: center;
+float: right;
+}
+.navigations img:hover{
+  filter: opacity(50%);
+}
+.navlogos{
+height: 40px;
+margin: 1.5vw;
+}
+.carousel{
+  width: 100%;
+  overflow: hidden;
+}
+.carousel img{
+  width: 100%;
+}
+.slides{
+  width: 300%;
+  display: flex;
+}
+.slides input{
+  display: none;
+}
+.slide{
+  width: 33.3333333%;
+  transition: 2s;
+}
+.mannav{
+  position: absolute;
+  width: 100%;
+  margin-top: -4vw;
+  display: flex;
+  justify-content: center;
+}
+.manbtn{
+  background: rgba(50, 50, 50, 0.25);
+  padding: 0.7vw;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.manbtn:not(:last-child){
+  margin-right: 1.5vw;
+}
+#p1:checked ~ .start{
+  margin-left: 0;
+}
+#p2:checked ~ .start{
+  margin-left: -33.3333333%;
+}
+#p3:checked ~ .start{
+  margin-left: -66.6666666%;
+}
+.manbtn:hover{
+  background: rgba(50, 50, 50, 0.9);
+}
+.autonav{
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: -4vw;
+}
+.autonav div{
+  background: rgba(50, 50, 50, 0.25);
+  padding: 0.7vw;
+  border-radius: 50%;
+  transition: .5s;
+}
+.autonav div:not(:last-child){
+  margin-right: 1.5vw;
+}
+#p1:checked ~ .autonav .autobtn1{
+  background: rgba(50, 50, 50, 0.9);
+}
+#p2:checked ~ .autonav .autobtn2{
+  background: rgba(50, 50, 50, 0.9);
+}
+#p3:checked ~ .autonav .autobtn3{
+  background: rgba(50, 50, 50, 0.9);
+}
+.slidearrows{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin-top: -21.5vw;
+  height: 4vw;
+}
+.slidearrows input:hover{
+  filter: opacity(50%);
+  transition: .5s;
+}
+.slidearrows input:not(:last-child){
+  margin-right: 78vw;
+}
+.login{
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login img{
+  width: 100%;
+  z-index: 0;
+}
+.loginpanel{
+  width: 50vh;
+  height: 50vh;
+  background-color: #F5EACFB2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+}
+.loginthing{
+  font-size: 5vh;
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+  font-family: "Times New Roman", Times, serif;
+}
+.username, .password{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3vh;
+}
+.username input, .password input{
+  width: 90%;
+  height: 3.5vh;
+  font-size: 2vh;
+}
+.rem{
+  width: 90%;
+  font-size: 2.5vh;
+  font-family: "Times New Roman", Times, serif;
+}
+.loginenter{
+  width: 50%;
+  height: 12%;
+  position: relative;
+  bottom: -12vh;
+  border-radius: 2.5vh;
+  background-color: #FCFDFC;
+  border: none;
+  font-size: 2vh;
+}
+.loginenter:hover{
+  border: 2px solid #bfb7a3;
+}
+.smlogos{
+  margin: 10px 10px 0 10px;
+}
+.smlogos:hover{
+  filter: opacity(65%);
+}
+.footer img{
+  border-radius: 5px;
+}
+
+
+
+.infos{
+  background-color: #FFFBF2;
+  float: left;
+  grid-row: 2;
+}
+
+.infos img{
+  margin: 10px 20px 0px 70px; 
+ }
+ 
+.desc{
+  float:right;
+  text-align: justify;
+  padding: 0px 5px 15px 5px; 
+  margin: 10px 55px 60px 5px;  
+}
+
+.t{
+  text-align: center;
+  font: 32px/45px Georgia, serif;
+  font-style: oblique;
+  background-color: #F5EACFB2;
+}
+
+.r{
+  font: 16px/30px Georgia, serif;
+  text-indent: 10%;
+  text-align: justify;
+}
+
+.quote{
+justify-content: center; 
+display: flex;
+text-align: center;
+
+}
+
+.q{
+font-family: Lucida Handwriting, "Courier New", cursive;
+}
+
+.last{
+  grid-row: 4;
+  background-color: #FFFBF2;
+  font:small-caption;
+  font-family: monospace;
+}
+
+
+
+

@@ -1,0 +1,56 @@
+.contentpart{
+  background:#F5EACF;
+}
+.profilepage{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.profile{
+  border: 1px solid black;
+  height: 80vh;
+  width: 80%;
+}
+.rent{
+}
+.profile_name{
+  padding: 3vh 3vw;
+  font-size: 5vh;
+  font-weight: 200;
+  width: 100%;
+}
+.profile_content{
+  border-bottom:  1px solid black;
+  border-radius: 2vw
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.profile_content div{
+margin-left: 5vw;
+margin-top: 1vh;
+margin-bottom: 1vh;
+}
+.rent{
+  width: 25%;
+  margin-left: 10%;
+  margin-top: 2vh;
+}
+.book_name{
+  margin-top: 2vh;
+}
+input[type="submit"]{
+ border: none;
+ width: 12vh;
+ height: 3vh;
+ position: relative;
+ float: right;
+ bottom: -35vh;
+ right: 1.5vw;
+ border-radius: 2.5vh;
+ background-color: #FCFDFC;
+ font-size: 2vh;
+}
